@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Spin css animation</title>
+
+    <style>
+        div {
+            background-color: red;
+            width: 100px;
+            height: 20px;
+            position: relative;
+            animation: sattta 7s linear infinite;
+            transform: rotate(360deg);
+        }
+
+        @keyframes sattta {
+            0% {
+                background-color: red;
+                left: 0px;
+                top: 50px;
+                transform: rotate(0deg);
+            }
+
+            80% {
+                background-color: yellow;
+                right: 0px;
+                top: 50px;
+                left: 93%;
+                bottom: 100vh;
+            }
+
+            85% {
+                background-color: blue;
+                right: 0px;
+                bottom: 0px;
+                top: 90vh;
+                left: 93%;
+            }
+
+            90% {
+                background-color: green;
+                left: 0px;
+                bottom: 0px;
+                right: 100%;
+                top: 90vh;
+            }
+
+            100% {
+                background-color: red;
+                left: 0px;
+                top: 50px;
+                transform: rotate(12000deg);
+            }
+        }
+        *{
+            margin: 0;padding: 0;
+        }
+       
+    </style>
+</head>
+
+<body>
+
+    <div id="satta"> satta </div>
+</body>
+
+</html>
